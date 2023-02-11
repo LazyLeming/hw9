@@ -1,0 +1,95 @@
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+using namespace std;
+
+
+
+int main() {
+    setlocale(LC_ALL, "rus");
+    //#1
+    /*
+    char arr[100];
+    int num = 0;
+    cin >> arr;
+    for (int i = 0; arr[i] != '\0'; i++)
+    {
+        num += 1;
+    }
+    cout << "Из 100 элементов массива занято: " << num << ", свободно: " << 100 - num << endl;
+    */
+   
+    //#2
+    /*
+    const int x = 300;
+    char text[x];
+    cout << "Input text:\n";
+    cin.getline(text, x);
+    system("cls");
+    cout << "Text:\n";
+    cout << text << endl;
+    char* str=text;
+    int count = strlen(str);
+    cout << "length:\n";
+    cout << count<<"\n";
+    int m , n;
+    cout << "Input m:\n";
+    cin >> m;
+    cout << "Input n:\n";
+    cin >> n;
+    if (m < n && n < count) {
+        string ss = "";
+        for (int i=m; i <= n; i++) {
+            ss = ss + text[i];
+        }
+        cout << ss;
+    }
+    */
+
+    //#3
+    /*
+    const int x = 300;
+    char text[x];
+    cout << "input text:\n";
+    cin.getline(text, x);
+    system("cls");
+    cout << "Text:\n";
+    cout << text << endl;
+    char* str = text;
+    int count = strlen(str);
+    cout << "length:\n";
+    cout << count << "\n";
+    int m, n;
+    cout << "Input m:\n";
+    cin >> m;
+    cout << "Input n:\n";
+    cin >> n;
+    string ss = "";
+    for (int i = 0; i < count; i++) {
+        if (i<m || i>n) {
+            ss = ss + text[i];
+        }
+    }
+    cout << ss;
+    */
+
+    //#4
+    /*
+    const int len = 400;
+    char str[len];
+    char s;
+    cout << "Please enter text of \t" << len << "\t including gaps" << endl;
+    gets_s(str);
+    cout << str << endl;
+    cout << "Please enter symbol" << endl;
+    cin >> s;
+    int i;
+    for (i = 0; i < strlen(str); i++)
+    {
+        if (str[i] == s)
+            cout << i + 1 << endl;
+    }
+    cout << endl;
+    */
+    return 0;
+}
